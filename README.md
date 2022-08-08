@@ -3,9 +3,12 @@
 ### Package Requirments
 `pip install x` where x is the below listed packages
 * pandas
-* hvplot
+* hvPlot
 * calendar
-* sqlalchemy
+* SQLAlchemy
   
 ### Purpose of Use
-* Use pandas to check out csv files before creating a PostgreSQL database in order to visualization skills, including aggregation, interactive visualizations, and geospatial analysis, to find properties in the San Francisco market that are viable investment opportunities.
+* Use pandas to check out csv files before creating a PostgreSQL database in order to organize tables and manipulate data contained in the csv files. Using this data, answer two questions in order to determine if fraudulent activity is present in any cardholder's transactions on their credit cards.
+* The analysis is in two parts:
+* 
+
