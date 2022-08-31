@@ -1,4 +1,4 @@
-# Module 7 Challenge: Fraud Detection
+# Fraud Detection
 
 ### Package Requirments
 `pip install x` where x is the below listed packages
