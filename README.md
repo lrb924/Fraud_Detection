@@ -25,7 +25,8 @@
 * `Data Exploration.ipynb`: Data exploration including investigating csv files and obtaining table column names
 * `visual_data_analysis.ipynb`: Notebook to query the database and generate visualizations that supply the requested information
 * `ERD.png`: image file of the ERD
-* `fraud_detection.sql`: The .sql file of the table schemata
+* `fraud_detection_tables.sql`: The .sql file of the table schemata
+* `fraud_detection_queries.sql`: The .sql file of the queries and views
 
 ### Solution
 Question 1: What difference do you observe between the consumption patterns between Cardholder 2 and Cardholder 18? Does the difference suggest a fraudulent transaction?
