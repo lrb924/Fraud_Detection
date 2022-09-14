@@ -7,31 +7,31 @@ CREATE TABLE card_holder (
 CREATE TABLE credit_card (
 	card VARCHAR(20) NOT NULL,
 	cardholder_id INT,
-	foreign key cardholder_id references card_holder (id),
+	FOREIGN KEY cardholder_id REFERENCES card_holder (id),
 	PRIMARY KEY (card)
 );
 
 CREATE TABLE merchant_category (
-	id INT not NULL,
+	id INT NOT NULL,
 	name VARCHAR(30),
-	primary key (id)
+	PRIMARY KEY (id)
 );
 
 CREATE TABLE merchant (
-	id INT not NULL,
+	id INT NOT NULL,
 	name VARCHAR(30),
 	id_merchant_category INT,
-	foreign key id_merchant_category references merchant_category (id),
-	primary key (id)
+	FOREIGN KEY id_merchant_category REFERENCES merchant_category (id),
+	PRIMARY KEY (id)
 );
 
 CREATE TABLE transaction (
-	id INT not NULL,
+	id INT NOT NULL,
 	date TIMESTAMP,
 	amount FLOAT,
 	card VARCHAR(20),
 	id_merchant INT
-	foreign key card references credit_card (card),
-	foreign key id_merchant references merchant (id),
-	primary key (id)
+	FOREIGN KEY card REFERENCES credit_card (card),
+	FOREIGN KEY id_merchant REFERENCES merchant (id),
+	PRIMARY KEY (id)
 );
